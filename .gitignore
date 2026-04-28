@@ -1,0 +1,9 @@
+# Temp files
+~$*
+*.tmp
+Thumbs.db
+.DS_Store
+
+# Large media files (too big for GitHub)
+*.mp4
+*.pdf
