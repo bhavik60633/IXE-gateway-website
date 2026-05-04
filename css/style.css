@@ -4,14 +4,14 @@
    ============================================= */
 
 :root {
-  --navy: #0c2461;
-  --navy-light: #1a3a8f;
-  --navy-dark: #071440;
-  --navy-deeper: #060e2a;
-  --gold: #d4af37;
-  --gold-light: #f0d060;
-  --gold-bright: #ffd700;
-  --gold-dark: #a88520;
+  --navy: #112948;
+  --navy-light: #1c3d6b;
+  --navy-dark: #0a1b31;
+  --navy-deeper: #050d18;
+  --gold: #F5B017;
+  --gold-light: #ffce5c;
+  --gold-bright: #ffdf91;
+  --gold-dark: #c98d0f;
   --white: #ffffff;
   --off-white: #f8f9ff;
   --light-bg: #eef1f9;
@@ -182,7 +182,16 @@ p { font-size: 1rem; color: var(--text-mid); line-height: 1.8; }
   margin: 0 auto;
   padding: 0 24px;
 }
-.nav-logo img { height: 50px; transition: var(--transition); }
+.nav-logo .logo-img {
+  height: 90px;
+  width: auto;
+  display: block;
+  transition: height 0.3s ease;
+}
+.navbar.scrolled .logo-img {
+  height: 70px;
+}
+
 .nav-logo .logo-text {
   font-family: 'Playfair Display', serif;
   font-size: 1.4rem;

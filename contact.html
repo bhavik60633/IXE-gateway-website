@@ -107,7 +107,7 @@
       transition: var(--transition);
       font-size: 0.95rem;
     }
-    .faq-question:hover { background: rgba(212,175,55,0.05); }
+    .faq-question:hover { background: rgba(245,176,23,0.05); }
     .faq-question.open { background: var(--navy); color: var(--white); }
     .faq-icon { font-size: 1.2rem; transition: var(--transition); }
     .faq-question.open .faq-icon { transform: rotate(45deg); }
@@ -126,10 +126,20 @@
       padding: 20px 24px;
     }
 
+    /* Logo Styles */
+    .logo-img {
+      height: 80px;
+      width: auto;
+      display: block;
+    }
+    .footer-logo-img {
+      height: 140px;
+      width: auto;
+      margin-bottom: 10px;
+    }
     @media (max-width: 768px) {
-      .full-form-grid { grid-template-columns: 1fr; gap: 32px; }
-      .full-form-section { padding: 32px 20px; }
-      .full-enquiry-form { padding: 28px 20px; }
+      .logo-img { height: 50px; }
+      .footer-logo-img { height: 100px; }
     }
   </style>
 </head>
@@ -139,7 +149,7 @@
   <nav class="navbar light-mode scrolled" id="navbar">
     <div class="nav-inner">
       <a href="index.html" class="nav-logo">
-        <div class="logo-text" style="color:var(--navy);">IXE<span>Gateway</span></div>
+        <img src="images/ixelogomain.png" alt="IXE Gateway" class="logo-img">
       </a>
       <ul class="nav-links">
         <li><a href="index.html" class="nav-link">Home</a></li>
@@ -193,7 +203,7 @@
           <a href="#" class="whatsapp-direct">Chat on WhatsApp →</a>
         </div>
         <div class="contact-card reveal delay-3">
-          <div class="cc-icon-wrap" style="background:rgba(212,175,55,0.1);">🌍</div>
+          <div class="cc-icon-wrap" style="background:rgba(245,176,23,0.1);">🌍</div>
           <h4>Global Reach</h4>
           <p>Exporting to international markets across Europe, Americas, Asia, Middle East, and more.</p>
           <span style="font-size:0.88rem;font-weight:600;color:var(--navy);">12+ Countries Served</span>
@@ -468,7 +478,9 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <div class="footer-logo">IXE<span>Gateway</span><span class="tagline">Import • Export</span></div>
+          <div class="footer-logo">
+            <img src="images/ixelogomain.png" alt="IXE Gateway" class="footer-logo-img">
+          </div>
           <p>IXE Gateway Pvt Ltd — Your trusted international trade and Makhana export partner from India.</p>
           <div class="social-links">
             <a href="#" class="social-link facebook" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>

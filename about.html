@@ -80,7 +80,7 @@
       font-size: 1.3rem;
       font-weight: 800;
       margin: 0 auto 16px;
-      box-shadow: 0 4px 16px rgba(212,175,55,0.3);
+      box-shadow: 0 4px 16px rgba(245,176,23,0.3);
     }
     .approach-step h4 { color: var(--navy); margin-bottom: 8px; }
     .approach-step p { font-size: 0.88rem; }
@@ -97,17 +97,17 @@
       align-items: flex-start;
       padding: 20px;
       background: rgba(255,255,255,0.05);
-      border: 1px solid rgba(212,175,55,0.15);
+      border: 1px solid rgba(245,176,23,0.15);
       border-radius: var(--radius);
       transition: var(--transition);
     }
     .apart-item:hover {
-      background: rgba(212,175,55,0.06);
-      border-color: rgba(212,175,55,0.4);
+      background: rgba(245,176,23,0.06);
+      border-color: rgba(245,176,23,0.4);
     }
     .apart-icon {
       width: 44px; height: 44px;
-      background: rgba(212,175,55,0.15);
+      background: rgba(245,176,23,0.15);
       border-radius: 10px;
       display: flex; align-items: center; justify-content: center;
       font-size: 1.2rem; flex-shrink: 0;
@@ -121,6 +121,22 @@
       .apart-grid { grid-template-columns: 1fr; }
       .team-section { padding: 36px 24px; }
     }
+
+    /* Logo Styles */
+    .logo-img {
+      height: 80px;
+      width: auto;
+      display: block;
+    }
+    .footer-logo-img {
+      height: 140px;
+      width: auto;
+      margin-bottom: 10px;
+    }
+    @media (max-width: 768px) {
+      .logo-img { height: 50px; }
+      .footer-logo-img { height: 100px; }
+    }
   </style>
 </head>
 <body>
@@ -129,7 +145,7 @@
   <nav class="navbar light-mode scrolled" id="navbar">
     <div class="nav-inner">
       <a href="index.html" class="nav-logo">
-        <div class="logo-text" style="color:var(--navy);">IXE<span>Gateway</span></div>
+        <img src="images/ixelogomain.png" alt="IXE Gateway" class="logo-img">
       </a>
       <ul class="nav-links">
         <li><a href="index.html" class="nav-link">Home</a></li>
@@ -200,16 +216,16 @@
               <div style="font-size:4rem;">🇮🇳</div>
               <div style="text-align:center;color:rgba(255,255,255,0.7);font-size:0.85rem;letter-spacing:1px;">PROUDLY MADE IN INDIA</div>
               <div style="display:flex;gap:16px;flex-wrap:wrap;justify-content:center;">
-                <div style="text-align:center;padding:12px 20px;background:rgba(212,175,55,0.1);border:1px solid rgba(212,175,55,0.3);border-radius:12px;">
+                <div style="text-align:center;padding:12px 20px;background:rgba(245,176,23,0.1);border:1px solid rgba(245,176,23,0.3);border-radius:12px;">
                   <div style="font-size:1.8rem;font-weight:800;color:var(--gold-light);">Bihar</div>
                   <div style="font-size:0.72rem;color:rgba(255,255,255,0.5);letter-spacing:1px;">SOURCING ORIGIN</div>
                 </div>
-                <div style="text-align:center;padding:12px 20px;background:rgba(212,175,55,0.1);border:1px solid rgba(212,175,55,0.3);border-radius:12px;">
+                <div style="text-align:center;padding:12px 20px;background:rgba(245,176,23,0.1);border:1px solid rgba(245,176,23,0.3);border-radius:12px;">
                   <div style="font-size:1.8rem;font-weight:800;color:var(--gold-light);">12+</div>
                   <div style="font-size:0.72rem;color:rgba(255,255,255,0.5);letter-spacing:1px;">MARKETS SERVED</div>
                 </div>
               </div>
-              <div style="width:80%;height:1px;background:rgba(212,175,55,0.2);"></div>
+              <div style="width:80%;height:1px;background:rgba(245,176,23,0.2);"></div>
               <div style="color:rgba(255,255,255,0.5);font-size:0.78rem;text-align:center;font-style:italic;">
                 "Bridging Indian Quality with Global Demand"
               </div>
@@ -235,7 +251,7 @@
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:32px;" class="mv-grid">
         <div style="padding:48px 40px;background:linear-gradient(135deg,var(--navy-dark),var(--navy));border-radius:var(--radius-lg);position:relative;overflow:hidden;" class="reveal-left">
           <span style="position:absolute;top:-20px;right:-20px;font-size:8rem;opacity:0.05;">🎯</span>
-          <span style="display:inline-block;padding:4px 16px;background:rgba(212,175,55,0.2);border:1px solid rgba(212,175,55,0.4);border-radius:50px;font-size:0.72rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold-light);margin-bottom:16px;">Our Mission</span>
+          <span style="display:inline-block;padding:4px 16px;background:rgba(245,176,23,0.2);border:1px solid rgba(245,176,23,0.4);border-radius:50px;font-size:0.72rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold-light);margin-bottom:16px;">Our Mission</span>
           <h3 style="color:var(--white);margin-bottom:16px;font-size:1.5rem;">Simplifying Global Trade</h3>
           <p style="color:rgba(255,255,255,0.75);line-height:1.8;">
             To simplify global sourcing by delivering <strong style="color:var(--gold-light);">consistent quality, reliable supply,</strong> and efficient export solutions to our international clients.
@@ -514,7 +530,9 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <div class="footer-logo">IXE<span>Gateway</span><span class="tagline">Import • Export</span></div>
+          <div class="footer-logo">
+            <img src="images/ixelogomain.png" alt="IXE Gateway" class="footer-logo-img">
+          </div>
           <p>IXE Gateway Pvt Ltd — Your trusted international trade and export partner from India.</p>
           <div class="social-links">
             <a href="#" class="social-link facebook" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
